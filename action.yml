@@ -155,7 +155,7 @@ runs:
 
     - name: Download FCS CLI using falconpy
       id: fcs-download
-      run: python $GITHUB_ACTION_PATH/fcs_download.py
+      run: python3 $GITHUB_ACTION_PATH/fcs_download.py
       shell: bash
       env:
         INPUT_BIN_PATH: ${{ inputs.bin_path }}
